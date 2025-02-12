@@ -1,0 +1,190 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1d;
+}
+
+div.body {
+    height: 350px;
+    width: 50%;
+    background: #252728;
+    border-radius: 15px;
+}
+
+div.container {
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #afb2b7;
+}
+
+div.friends-container {
+    height: 85%;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3b3d3e;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a4a8ad;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f0f0f0;
+}
+
+
+div.friend {
+    height: 97%;
+    width: 150px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2px solid #64676b;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0px 5px 0px 0px;
+}
+
+div.friend-avatar {
+    width: 100%;
+}
+
+div.friend-info {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 8px 5px 8px;
+}
+
+h2.friend-name {
+    color: #f0f0f0;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2.friend-name:hover {
+    text-decoration: underline;
+}
+
+div.friend-mutual {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    color: #a5a9ae;
+}
+
+div.friend-mutual-avt {
+    display: flex;
+    align-items: center;
+    padding-right: 2px;
+}
+
+div.friend-mutual-avt img {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid #252728;
+}
+
+img.avt-2, img.avt-3 {
+    margin-left: -5px;
+}
+
+div.button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 8px;
+    gap: 6px;
+}
+
+button.accept-btn {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #f0f0f0;
+    background-color: #0865fd;
+}
+
+button.accept-btn:hover {
+    background-color: #2175fd;
+}
+
+button.decline-btn {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #f0f0f0;
+    background-color: #3b3d3e;
+}
+
+button.decline-btn:hover {
+    background-color: #5a5a5b;
+}
+
+div.footer {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.see-all {
+    font-size: 12px;
+    font-weight: normal;
+    color: #74b5fd;
+}
+
+button.see-all:hover {
+    font-weight: bold;
+}
+
+p.no-more-friends {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin-top: 50px;
+}
